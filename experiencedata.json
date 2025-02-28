@@ -1,0 +1,11 @@
+{
+    "title": "experience",
+    "description" : "my job experience",
+    "items": [
+        {"company": "Infotiv", "role": "Technical Writer", "year": 2023},
+        {"company": "Infotiv", "role": "Technical Writer", "year": 2023},
+        {"company": "Infotiv", "role": "Technical Writer", "year": 2023},
+        {"company": "Infotiv", "role": "Technical Writer", "year": 2023}
+    ]
+
+}

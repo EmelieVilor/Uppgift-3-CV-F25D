@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inlämningsuppgift 3</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/style.css" />
+  
+    <script src="./script.js" defer></script>
+  
+  </head>
+  <body>
+    <nav class="top-nav">
+      <button class="modeBtn"><i class="top-logo fa-solid fa-sun"></i>
+        <i class=" top-logo2 fa-solid fa-moon"></i></button>
+      
+      <i class="menu-icon fa fa-bars"></i>
+
+      <ul class="menu">
+        <a class= "menu-item active" href="/index.html">Home</a>
+        <a class= "menu-item" href="/about.html">About</a>
+        <a class= "menu-item" href="/cv.html">CV</a>
+        <a class= "menu-item" href="/contact.html">Contact</a>
+      </ul>
+
+
+    </nav>
+
+    <header>
+      <img
+        class="ProfilePicture"
+        src="/images/4.jpg"
+        alt="ProfilePicture"
+      />
+
+      <div class="AboutMe">
+        <h1>Emelie Vilör</h1>
+        <h4>Frontend Developer student & Interaction Designer</h4>
+        <p>With further experience in graphic design, and customer service.
+          Looking for new opportunities to develop my knowledge.
+          Check out my previous projects or download my full CV below!</p>
+<div class="buttons">
+          <a id="cvBtn" href="/documents/CV_2025.pdf" download="CV2025">Download my CV! <i class="fa-solid fa-download"></i></a>
+          <a href="#" id="projectsBtn">View my projects <i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+      </div>
+    </header>
+
+    <main>  
+
+<div class="skills-container">
+    <div class="tech-skills">
+        <h4>Tech Skills</h4>
+        <h2>HTML / CSS</h2>
+        <div class="line line1"></div>
+        <h2>JavaScript</h2>
+        <div class="line line2"></div>
+        <h2>Photoshop</h2>
+        <div class="line line3"></div>
+        <h2>Illustrator</h2>
+        <div class="line line4"></div>
+        <h2>Figma</h2>
+        <div class="line line5"></div>
+    </div>
+
+    <div class="knowledge-areas">
+      <h4>Knowledge areas</h4>
+
+      <h2>Web Development</h2>
+      <div class="line line6"></div>
+      <h2>Interaction Design</h2>
+      <div class="line line7"></div>
+      <h2>Graphic Design</h2>
+      <div class="line line8"></div>
+      <h2>Service Design</h2>
+      <div class="line line9"></div>
+      <h2>Technical Writing</h2>
+      <div class="line line10"></div>
+  </div>
+</div>
+
+    <h4>Previous projects</h4>
+
+        <div class="projects-container">
+          <div class="card">
+            <img alt="" src="/images/project1.jpg">
+            <div class="overlay">
+              <h2>Login Page</h2>
+              <p>This project was made for my studies in Front end development at Borås Yrkeshögskola.</p><button id="modalBtn1">Learn More</button>
+            </div>
+          </div>
+          <div class="card">
+            <img alt="" src="/images/project2.jpg">
+            <div class="overlay">
+              <h2>EcoCycle</h2>
+              <p>This is a fake website made for practicing HTML and Css layout. All text content are made by my prompts to ChatGpt.</p><button id="modalBtn2">Learn More</button>
+            </div>
+          </div>
+          <div class="card">
+            <img alt="" src="/images/project3.jpg">
+            <div class="overlay">
+              <h2>HTML/CSS Layout</h2>
+              <p>Simple layout test in HTML/CSS.</p><button id="modalBtn3">Learn More</button>
+            </div>
+          </div>
+          <div class="card">
+            <img alt="" src="/images/project4.jpg">
+            <div class="overlay">
+              <h2>Master Thesis Project</h2>
+              <p>This project was made for my Master thesis in Interaction Design at Malmö University.</p><button id="modalBtn4">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+<!-- Project 1 Modal -->
+<div id="Modal1" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="project-heading">
+      <h2>Login Page</h2>
+      <h3>Project made in HTML/CSS</h3>
+    </div>
+      <span class="close"><i class="fa fa-x"></i></span>
+    </div>
+    <div class="modal-body">
+      <img src="/images/project1.jpg" alt="project1">
+      <div class="modal-text">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi corrupti voluptates laboriosam reprehenderit in aliquid beatae minus perspiciatis possimus sapiente, architecto tenetur eligendi non vitae quibusdam inventore natus error saepe, quos nobis odit provident? Non.</p>
+        <a href="https://github.com/EmelieVilor/Uppgift1-Login-F25D">GitHub link</a>
+      </div>
+  </div>
+</div>
+
+<!-- Project 2 Modal -->
+<div id="Modal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="project-heading">
+      <h2>EcoCycle</h2>
+      <h3>Fake website made with HTML/CSS</h3>
+    </div>
+      <span class="close"><i class="fa fa-x"></i></span>
+    </div>
+    <div class="modal-body">
+      <img src="/images/project2.jpg" alt="project1">
+      <div class="modal-text">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi corrupti voluptates laboriosam reprehenderit in aliquid beatae minus perspiciatis possimus sapiente, architecto tenetur eligendi non vitae quibusdam inventore natus error saepe, quos nobis odit provident? Non.</p>
+        <a href="https://github.com/EmelieVilor/Portfolio-example">GitHub link</a>
+      </div>
+  </div>
+</div>
+
+<!-- Project 3 Modal -->
+<div id="Modal3" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="project-heading">
+      <h2>Web Layout</h2>
+      <h3>Project made in HTML/CSS</h3>
+    </div>
+      <span class="close"><i class="fa fa-x"></i></span>
+    </div>
+    <div class="modal-body">
+      <img src="/images/project3.jpg" alt="project1">
+      <div class="modal-text">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi corrupti voluptates laboriosam reprehenderit in aliquid beatae minus perspiciatis possimus sapiente, architecto tenetur eligendi non vitae quibusdam inventore natus error saepe, quos nobis odit provident? Non.</p>
+        <a href="https://github.com/EmelieVilor/Exempel-4">GitHub link</a>
+      </div>
+  </div>
+</div>
+
+<!-- Project 4 Modal -->
+<div id="Modal4" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="project-heading">
+      <h2>Master Thesis</h2>
+      <h3>Project made for my Master thesis in Interaction Design</h3>
+    </div>
+      <span class="close"><i class="fa fa-x"></i></span>
+    </div>
+    <div class="modal-body">
+      <img src="/images/project4.jpg" alt="project1">
+      <div class="modal-text">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi corrupti voluptates laboriosam reprehenderit in aliquid beatae minus perspiciatis possimus sapiente, architecto tenetur eligendi non vitae quibusdam inventore natus error saepe, quos nobis odit provident? Non.</p>
+        <a href="/documents/Emelie_Larsson_TP2_revised.pdf" download="EmelieThesis">Read more</a>
+      </div>
+  </div>
+</div>
+    </main>
+
+    <footer>
+      <p>Contact me!</p>
+
+      <div class="links">
+        <div class ="logo"><a href="https://github.com/EmelieVilor" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+        <div class ="logo"><a href="https://www.linkedin.com/in/emelie-vilor/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+        <div class ="logo"> <a href="mailto:#"><i class="fa-solid fa-envelope"></i></a> </div>
+      </div>
+    </footer>
+  </body>
+</html>

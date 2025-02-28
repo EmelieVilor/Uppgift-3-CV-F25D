@@ -1,0 +1,11 @@
+{
+    "title": "education",
+    "description" : "my education",
+    "items": [
+        {"program": "Frontend Developer React", "school": "Borås Yrkeshögskola", "year": 2025},
+        {"program": "Frontend Developer React", "school": "Borås Yrkeshögskola", "year": 2025},
+        {"program": "Frontend Developer React", "school": "Borås Yrkeshögskola", "year": 2025},
+        {"program": "Frontend Developer React", "school": "Borås Yrkeshögskola", "year": 2025}
+    ]
+
+}
