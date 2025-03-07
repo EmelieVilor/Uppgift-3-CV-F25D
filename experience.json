@@ -1,0 +1,26 @@
+{
+    "title": "Experience",
+    "description" : "My work experience",
+    "items": [
+        {"company": "Infotiv Information & Design", 
+        "title": "Technical Writer", 
+        "duration": "2023", 
+        "description": "Detta är en beskrivning"},
+
+        {"company": "Trafikverket", 
+        "title": "Traffic Informer", 
+        "duration": "2020-2023", 
+        "description": "Detta är en beskrivning"},
+
+        {"company": "SJ AB", 
+        "title": "Travel Agent", 
+        "duration": "2010-2020", 
+        "description": "Detta är en beskrivning"},
+
+        {"company": "Skånetrafiken", 
+        "title": "Travel Agent", 
+        "duration": "2014-2016", 
+        "description": "Detta är en beskrivning"}
+    ]
+
+}

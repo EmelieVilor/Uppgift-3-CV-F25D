@@ -23,6 +23,18 @@
     transition: all 0.8s;
 }
 
+@media (prefers-color-scheme: light) {
+    .lightmode {
+        --dark: #ffffff;
+        --gray: #efefef;
+        --darkaccent: #31363F;
+        --accent: #90bfc2;
+        --white: #222831;
+        background-color: var(--dark);
+        transition: all 0.8s;
+    }
+    }
+
 body {
     height: 100vh;
     color: var(--gray);
@@ -37,8 +49,9 @@ main {
 
 /*---------------------- TopNav --------------------- */
 .top-nav {
+    height: 10vh;
     background-color: var(--gray);
-    padding: 20px;
+    padding: 40px;
     display: flex;
     position: relative;
     flex-direction: row;
@@ -70,6 +83,8 @@ main {
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    cursor: pointer;
+    transition: all 0.8s;
 }
 
 .modeBtn i {
@@ -111,6 +126,7 @@ ul a:active {
 }
 
 .menu-icon {
+    font-size: 20px;
     display: none;
     color: var(--white);
 }
@@ -260,7 +276,7 @@ button a {
 .tech-skills {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     width: 100%;
     margin-bottom: 40px;
 }
@@ -268,7 +284,7 @@ button a {
 .knowledge-areas {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     width: 100%;
     margin-bottom: 40px;
 }
@@ -357,9 +373,12 @@ button a {
     display: flex;
     gap: 30px;
     margin-top: 30px;
+    margin-bottom: 80px;
 }
 
 .card {
+    height: 280px;
+    width: 290px;
     position: relative;
     overflow: hidden;
     width: 50%;
@@ -370,7 +389,6 @@ button a {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    /* border: solid 2px var(--accent); */
     display: block;
     object-fit: cover;
     transition: transform 0.5s;
@@ -423,85 +441,36 @@ button a {
     height: 100%;
 }
 
-/*---------------------- Modal --------------------- */
+/*---------------------- Modals --------------------- */
 
-#modalBtn1{
-        margin-top: 10px;
-        color: var(--white);
-        background: var(--gray);
-        text-decoration: none;
-        font-size: 14px;
-        font-family: 'Courier New', Courier, monospace;
-        border: 2px solid var(--accent);
-        padding: 15px;
-    }
-    
-    #modalBtn1:hover {
-        background-color: var(--accent);
-        color: var(--gray);
-        cursor: pointer;
-    }
-
-
-/* The Modal (background) */
-.modal {
+#Modal1, #Modal2, #Modal3, #Modal4 {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
-    padding-top: 100px;
-    /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
+    left:10%;
+    top: 25%;
+    width: 80%;
     overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
+    box-shadow: 0px 0px 500px 500px rgb(0 0 0 / 0.8);
 }
 
-/* Modal Content */
 .modal-content {
     position: relative;
-    background-color: var(--dark);
     margin: auto;
-    padding: 0;
     border: none;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s
+    width: 100%;
+
+    box-shadow: 0px 0px 500px 500px rgb(0 0 0 / 0.8);
+
 }
 
-/* Add Animation */
-
-@keyframes animatetop {
-    from {
-        top: -300px;
-        opacity: 0
-    }
-
-    to {
-        top: 0;
-        opacity: 1
-    }
-}
-
-/* The Close Button */
-.close {
+.fa-x {
     color: var(--white);
-    font-size: 15px;
+    font-size: 20px; 
 }
 
-.close:hover,
-.close:focus {
+.fa-x:hover,
+.fa-x:focus {
     color: var(--dark);
     text-decoration: none;
     cursor: pointer;
@@ -512,48 +481,66 @@ button a {
     justify-content: space-between;
     align-items: center;
     padding: 10px 16px;
-    background-color: var(--gray);
+    background-color: var(--accent);
     color: var(--white);
 }
 
 .modal-body {
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    background-color: var(--gray);
     align-items: center;
-    padding: 10px 16px;
+
 }
 
 .modal-body img {
-    width: 300px;
+    width: 350px;
+    margin: 50px;
 }
 
 .modal-text {
-    display: block;
-    gap: 50px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+
+
 }
 
 .modal-text p {
-    width: 600px;
     text-align: justify;
-    margin-bottom: 40px;
+    width: 80%;
+
 }
 
-.modal a {
+#tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-text i {
+    font-size: 35px;
+    margin: 10px;
+}
+
+
+.modal-text a {
     color: var(--white);
-    background: var(--dark);
+    background: var(--gray);
     text-decoration: none;
     font-size: 14px;
     font-family: 'Courier New', Courier, monospace;
     border: 2px solid var(--accent);
     padding: 15px;
+    
 }
 
-.modal a:hover {
+.modal-text a:hover {
     background-color: var(--accent);
     color: var(--dark);
-
-
 }
 
 /*---------------------- CV --------------------- */
@@ -612,6 +599,37 @@ button a {
     top: 25px;
 }
 
+#CV {
+    height: 65vh;
+}
+
+.cvContainer {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.cvContainer i {
+    color: var(--accent);
+}
+
+.cvContainer #title {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.cvContainer li {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+#exTitle, #edTitle {
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+
+
 /*---------------------- About --------------------- */
 
 .about-container {
@@ -664,11 +682,18 @@ iframe {
     align-items: center;
 }
 
+
+
+
+
 /*---------------------- Footer --------------------- */
 
 footer {
-    padding-top: 40px;
-    height: 22vh;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
     text-align: center;
     background-color: var(--accent);
 }
@@ -678,7 +703,6 @@ footer {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 20px;
 }
 
 .links a {
@@ -729,7 +753,44 @@ footer p {
         width: 100%;
     }
 
+
+     /*---------------------- Modals --------------------- */
+
+
+    #Modal1, #Modal2, #Modal3, #Modal4 {
+
+        left:10%;
+        top: 0;
+        overflow: scroll;
+    }
+
+    .modal-body {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .modal-body img{
+        width: 80%;
+        margin:auto;
+
+    }
+
+    .modal-body p{
+        width: 80%;
+    }
+
+    .modal-text{
+        margin: 0;
+        gap: 5px;
+    }
+
 }
+
+
 
 
 @media screen and (max-width: 700px) {
@@ -745,12 +806,12 @@ footer p {
 
     .menu {
         display: none;
-        background-color: var(--lighter);
+        background-color: var(--gray);
         flex-direction: column;
         position: absolute;
         top: 10vh;
         right: 0;
-        padding: 30px;
+        padding: 40px;
         z-index: 1;
     }
 
@@ -778,6 +839,42 @@ footer p {
     .card {
         width: 100%;
     }
+
+
+     /*---------------------- Modals --------------------- */
+
+
+    #Modal1, #Modal2, #Modal3, #Modal4 {
+
+        left:10%;
+        top: 5%;
+    }
+
+    .modal-body {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .modal-body img{
+        width: 80%;
+        margin:auto;
+
+    }
+
+    .modal-body p{
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .modal-text{
+        margin: 0;
+        gap: 5px;
+    }
+
 
     /*---------------------- CV page --------------------- */
     .full-resume-container {

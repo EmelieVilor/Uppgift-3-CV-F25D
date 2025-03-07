@@ -1,0 +1,27 @@
+{
+    "title": "Education",
+    "description" : "My education",
+    "items": [
+        {"school": "Borås Yrkeshögskola", 
+        "program": "Frontend Development React", 
+        "duration": "2025-2026", 
+        "description": "Detta är en beskrivning"},
+
+        {"school": "Malmö University", 
+        "program": "Interaction Design Master Program", 
+        "duration": "2018-2020", 
+        "description": "Detta är en beskrivning"},
+
+        {"school": "Malmö University", 
+        "program": "Interaction Design Bachelor Program", 
+        "duration": "2014-2017", 
+        "description": "Detta är en beskrivning"},
+
+        {"school": "Mediegymnasiet", 
+        "program": "Graphic Design", 
+        "duration": "2006-2009", 
+        "description": "Detta är en beskrivning"}
+    ]
+
+}
+
