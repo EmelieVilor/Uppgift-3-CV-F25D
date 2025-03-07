@@ -5,22 +5,22 @@
         {"school": "Borås Yrkeshögskola", 
         "program": "Frontend Development React", 
         "duration": "2025-2026", 
-        "description": "Detta är en beskrivning"},
+        "description": "Yrkesförberedande utbildning i webb-och apputveckling på distans."},
 
         {"school": "Malmö University", 
-        "program": "Interaction Design Master Program", 
+        "program": "Interaction Design Master", 
         "duration": "2018-2020", 
-        "description": "Detta är en beskrivning"},
+        "description": "Fördjupande och internationell utbildning. Många möjligheter att arbeta med olika stakeholders/användare."},
 
         {"school": "Malmö University", 
-        "program": "Interaction Design Bachelor Program", 
+        "program": "Interaction Design Bachelor", 
         "duration": "2014-2017", 
-        "description": "Detta är en beskrivning"},
+        "description": "Praktisk utbildning i interaktionsdesign med syftet att skapa designkoncept, och prototyper med hjälp av utvärdering och iterationer, med stor fokus på designprocessen och på användaren."},
 
         {"school": "Mediegymnasiet", 
         "program": "Graphic Design", 
         "duration": "2006-2009", 
-        "description": "Detta är en beskrivning"}
+        "description": "Lärde mig grunderna för grafisk design samt fick en mycket god förståelse för program som Photoshop, Illustrator och InDesign."}
     ]
 
 }

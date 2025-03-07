@@ -23,18 +23,6 @@
     transition: all 0.8s;
 }
 
-@media (prefers-color-scheme: light) {
-    .lightmode {
-        --dark: #ffffff;
-        --gray: #efefef;
-        --darkaccent: #31363F;
-        --accent: #90bfc2;
-        --white: #222831;
-        background-color: var(--dark);
-        transition: all 0.8s;
-    }
-    }
-
 body {
     height: 100vh;
     color: var(--gray);
@@ -43,7 +31,6 @@ body {
 }
 
 main {
-
     margin: 40px 80px 40px 80px;
 }
 
@@ -515,7 +502,7 @@ button a {
 
 }
 
-#tools {
+.tools {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -600,13 +587,13 @@ button a {
 }
 
 #CV {
-    height: 65vh;
+    height: 90vh;
 }
 
 .cvContainer {
     display: flex;
-    gap: 40px;
-    justify-content: space-between;
+    gap: 50px;
+    justify-content: space-around;
 }
 
 .cvContainer i {
@@ -621,11 +608,17 @@ button a {
 .cvContainer li {
     color: var(--white);
     margin-bottom: 20px;
+    text-align: justify;
+    width: 95%;
 }
 
 #exTitle, #edTitle {
     color: var(--accent);
     margin-bottom: 20px;
+}
+
+#edFilelist, #exFilelist {
+    white-space: pre-wrap;
 }
 
 
@@ -689,7 +682,6 @@ iframe {
 /*---------------------- Footer --------------------- */
 
 footer {
-    height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;

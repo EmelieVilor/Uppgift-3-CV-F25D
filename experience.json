@@ -5,22 +5,22 @@
         {"company": "Infotiv Information & Design", 
         "title": "Technical Writer", 
         "duration": "2023", 
-        "description": "Detta är en beskrivning"},
+        "description": "Fick möjlighet att fördjupa mina kunskaper inom teknikinformation, en del webbutveckling och arbetade med ett underlag till företagets nya hemsida."},
 
         {"company": "Trafikverket", 
         "title": "Traffic Informer", 
         "duration": "2020-2023", 
-        "description": "Detta är en beskrivning"},
+        "description": "Jag arbetade operativt, i nära samarbete med trafikledare, med att informera resenärer om tågtrafiken i södra Sverige genom skyltsystem och utrop."},
 
         {"company": "SJ AB", 
         "title": "Travel Agent", 
         "duration": "2010-2020", 
-        "description": "Detta är en beskrivning"},
+        "description": "Arbete i butik och lounge innebar att assistera resenärer i bokning av biljetter i alla kanaler, informera och koordinera vid trafikstörningar, samt hålla det trivsamt i SJ Lounge."},
 
         {"company": "Skånetrafiken", 
         "title": "Travel Agent", 
         "duration": "2014-2016", 
-        "description": "Detta är en beskrivning"}
+        "description": "Det höga tempot på Skånetrafikens resecenter lärde mig att hantera stress bättre, och hur man på bästa sätt hanterar upprörda resenärer."}
     ]
 
 }
